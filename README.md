@@ -1,3 +1,3 @@
 # SneakerNotifier
 
-Notificates you about the new sneakers coming
+Notifies you about the new sneakers coming
