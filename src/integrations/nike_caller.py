@@ -1,5 +1,5 @@
-from BaseCaller import BaseCaller
-from SneakerInfo import SneakerInfo
+from src.BaseCaller import BaseCaller
+from src.SneakerInfo import SneakerInfo
 
 
 def getSneakers():

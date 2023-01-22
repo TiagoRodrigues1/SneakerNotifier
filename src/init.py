@@ -1,6 +1,6 @@
-import svd_caller
-import nike_caller
-import sns_caller
+import integrations.svd_caller as svd_caller
+import integrations.nike_caller as nike_caller
+import integrations.sns_caller as sns_caller
 
 nike = nike_caller.getSneakers()
 svd = svd_caller.getSneakers()

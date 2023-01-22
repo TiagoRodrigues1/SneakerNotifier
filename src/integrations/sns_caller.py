@@ -1,6 +1,5 @@
-from BaseCaller import BaseCaller
-from SneakerInfo import SneakerInfo
-
+from src.BaseCaller import BaseCaller
+from src.SneakerInfo import SneakerInfo
 
 def getSneakers():
     baseUrl = "https://www.sneakersnstuff.com/en/937/sns-sign-up"
