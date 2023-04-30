@@ -16,7 +16,15 @@ def getSneakers():
         price = sneaker.find(attrs={'class': 'price'}).text.strip()
         img = sneaker.find('img').get('src')
         releaseDate = sneaker.find(
-            attrs={'class': 'countdown card__countdown release-date'}).get('datetime')
+            attrs={'class': 'countdown card__countdown release-date'})
+       
+        start = str(releaseDate).find('datetime="')
+        end = str(releaseDate).find('Z"')
+
+        if start >= 0 and end > 0:
+            newReleaseDate = str(releaseDate)[start:end]
+            start = newReleaseDate.find('="') + 2
+            releaseDate = newReleaseDate[start:len(newReleaseDate) - 1]   
 
         sneakers.append(SneakerInfo(
             brand + " " + name, img, price, releaseDate))
